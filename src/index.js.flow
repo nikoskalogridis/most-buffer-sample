@@ -1,0 +1,6 @@
+// @flow
+
+import type {Stream} from '@most/types';
+
+declare export function sampleBuffer<A, T>(sampler: Stream<T>, stream: Stream<A>): Stream<A[]>;
+declare export function sampleBuffer<A, T>(sampler: Stream<T>): (stream: Stream<A>) => Stream<A[]>;
